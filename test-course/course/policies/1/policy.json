@@ -1,0 +1,109 @@
+{
+    "course/1": {
+        "advanced_modules": [
+            "annotatable",
+            "conditional",
+            "done",
+            "edx_sga",
+            "google-calendar",
+            "google-document",
+            "lti",
+            "lti_consumer",
+            "library_content",
+            "library_sourced",
+            "poll",
+            "rate",
+            "scorm",
+            "split_test",
+            "staffgradedxblock",
+            "survey"
+        ],
+        "allow_proctoring_opt_out": true,
+        "cert_html_view_enabled": true,
+        "course_image": "images_course_image.jpg",
+        "discussion_topics": {
+            "General": {
+                "id": "course"
+            }
+        },
+        "display_name": "Open edX Test Course",
+        "instructor_info": {
+            "instructors": []
+        },
+        "language": "en",
+        "learning_info": [],
+        "start": "2022-04-09T00:00:00Z",
+        "tabs": [
+            {
+                "course_staff_only": false,
+                "name": "Home",
+                "type": "course_info"
+            },
+            {
+                "course_staff_only": false,
+                "name": "Course",
+                "type": "courseware"
+            },
+            {
+                "course_staff_only": false,
+                "name": "Progress",
+                "type": "progress"
+            },
+            {
+                "course_staff_only": false,
+                "name": "Dates",
+                "type": "dates"
+            },
+            {
+                "course_staff_only": false,
+                "name": "Discussion",
+                "type": "discussion"
+            },
+            {
+                "course_staff_only": false,
+                "is_hidden": true,
+                "name": "Wiki",
+                "type": "wiki"
+            },
+            {
+                "course_staff_only": false,
+                "name": "Textbooks",
+                "type": "textbooks"
+            }
+        ],
+        "user_partitions": [
+            {
+                "active": true,
+                "description": "An Experiment Group Configuration for testing. Randomly divides learners into three groups, with equal probability for each group.",
+                "groups": [
+                    {
+                        "id": 1510747468,
+                        "name": "Group 1A",
+                        "version": 1
+                    },
+                    {
+                        "id": 1299116708,
+                        "name": "Group 1B",
+                        "version": 1
+                    },
+                    {
+                        "id": 1203097969,
+                        "name": "Group 1C",
+                        "version": 1
+                    }
+                ],
+                "id": 1617092182,
+                "name": "Test Group Config 1",
+                "parameters": {},
+                "scheme": "random",
+                "version": 3
+            }
+        ],
+        "xml_attributes": {
+            "filename": [
+                "course/1.xml",
+                "course/1.xml"
+            ]
+        }
+    }
+}

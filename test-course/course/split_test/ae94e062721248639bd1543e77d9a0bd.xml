@@ -1,0 +1,5 @@
+<split_test group_id_to_child="{&quot;1510747468&quot;: &quot;i4x://TestX/Course/vertical/9544970dc23644abb0d5f67e7d7c969a&quot;, &quot;1299116708&quot;: &quot;i4x://TestX/Course/vertical/6292369de5494704b08f0c7b1bbad012&quot;, &quot;1203097969&quot;: &quot;i4x://TestX/Course/vertical/f8978f41aa5347c9b0e2fd99200b5aed&quot;}" user_partition_id="1617092182" display_name="Content Experiment - One video per group">
+  <vertical url_name="9544970dc23644abb0d5f67e7d7c969a"/>
+  <vertical url_name="6292369de5494704b08f0c7b1bbad012"/>
+  <vertical url_name="f8978f41aa5347c9b0e2fd99200b5aed"/>
+</split_test>

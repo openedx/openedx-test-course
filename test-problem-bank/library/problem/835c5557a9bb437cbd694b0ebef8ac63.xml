@@ -1,0 +1,12 @@
+<problem display_name="Multi Choice I" markdown="Multi Choice I&#10;==============&#10;&#10;&gt;&gt;Choose the correct answer&lt;&lt;&#10;&#10;(x) the correct answer&#10;( ) an incorrect answer&#10;( ) an incorrect answer&#10;( ) an incorrect answer&#10;">
+  <multiplechoiceresponse>
+    <h3 class="hd hd-2 problem-header">Multi Choice I</h3>
+    <label>Choose the correct answer</label>
+    <choicegroup type="MultipleChoice">
+      <choice correct="true">the correct answer</choice>
+      <choice correct="false">an incorrect answer</choice>
+      <choice correct="false">an incorrect answer</choice>
+      <choice correct="false">an incorrect answer</choice>
+    </choicegroup>
+  </multiplechoiceresponse>
+</problem>

@@ -1,0 +1,12 @@
+<problem display_name="Dropdown III" markdown="Dropdown III&#10;============&#10;&gt;&gt;Choose the correct answer&lt;&lt;&#10;[[&#10;an incorrect answer&#10;an incorrect answer&#10;(the correct answer)&#10;an incorrect answer&#10;]]&#10;">
+  <optionresponse>
+    <h3 class="hd hd-2 problem-header">Dropdown III</h3>
+    <label>Choose the correct answer</label>
+    <optioninput>
+      <option correct="False">an incorrect answer</option>
+      <option correct="False">an incorrect answer</option>
+      <option correct="True">the correct answer</option>
+      <option correct="False">an incorrect answer</option>
+    </optioninput>
+  </optionresponse>
+</problem>

@@ -1,0 +1,12 @@
+<problem>
+  <optionresponse>
+    <h3 class="hd hd-2 problem-header">Dropdown I</h3>
+    <label>Choose the correct answer</label>
+    <optioninput>
+      <option correct="True">the correct answer</option>
+      <option correct="False">an incorrect answer</option>
+      <option correct="False">an incorrect answer</option>
+      <option correct="False">an incorrect answer</option>
+    </optioninput>
+  </optionresponse>
+</problem>

@@ -1,0 +1,40 @@
+# Ensure the test course and libraries can be imported.
+
+name: CI
+
+on:
+    pull_request:
+        branches: ["master"]
+    push:
+        branches: ["master"]
+
+jobs:
+    ci:
+        runs-on: ubuntu-latest
+        steps:
+            - name: checkout
+              uses: actions/checkout@v2
+
+            # TOOD: just install latest stable tutor from PyPI once:
+            #   * https://github.com/openedx/edx-platform/pull/30449 is merged and built
+            #     into tutor openedx image, and
+            #   * https://github.com/overhangio/tutor/pull/669 is merged and released.
+            - name: install tutor
+              run: pip install git+https://github.com/kdmccormick/tutor.git@kdmccormick/test-course-nightly#egg=tutor
+
+            - name: disable mfe
+              run: |
+                  tutor plugins disable mfe
+                  tutor config save
+
+            - name: tutor local quickstart
+              run: tutor local quickstart --non-interactive
+
+            # We need a user to exist, since all libraries need an owner.
+            # The Makefile assigns the library to the user named 'admin', so
+            # we name create an 'admin' user here.
+            - name: create admin user
+              run: tutor local createuser admin admin@example.com --password admin --staff --superuser
+
+            - name: import course & libraries
+              run: make import
