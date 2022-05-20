@@ -1,0 +1,11 @@
+<problem display_name="Checks III" markdown="Checks III&#10;==========&#10;&#10;[ ] an incorrect answer&#10;[x] a correct answer&#10;[ ] an incorrect answer&#10;[x] a correct answer&#10;">
+  <choiceresponse>
+    <h3 class="hd hd-2 problem-header">Checks III</h3>
+    <checkboxgroup>
+      <choice correct="false">an incorrect answer</choice>
+      <choice correct="true">a correct answer</choice>
+      <choice correct="false">an incorrect answer</choice>
+      <choice correct="true">a correct answer</choice>
+    </checkboxgroup>
+  </choiceresponse>
+</problem>

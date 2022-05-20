@@ -1,0 +1,26 @@
+{
+    "Screenshot_2022-05-17_12-45-12.png": {
+        "contentType": "image/png",
+        "content_son": {
+            "category": "asset",
+            "course": "Course",
+            "name": "Screenshot_2022-05-17_12-45-12.png",
+            "org": "TestX",
+            "revision": null,
+            "run": "1",
+            "tag": "c4x"
+        },
+        "displayname": "Screenshot_2022-05-17_12-45-12.png",
+        "filename": "asset-v1:TestX+Course+1+type@asset+block@Screenshot_2022-05-17_12-45-12.png",
+        "import_path": "Screenshot_2022-05-17_12-45-12.png",
+        "locked": false,
+        "thumbnail_location": [
+            "c4x",
+            "TestX",
+            "Course",
+            "thumbnail",
+            "Screenshot_2022-05-17_12-45-12-png.jpg",
+            null
+        ]
+    }
+}

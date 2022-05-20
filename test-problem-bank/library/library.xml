@@ -1,0 +1,23 @@
+<library url_name="library" xblock-family="xblock.v1" tags="[]" display_name="Open edX Test Problem Bank" course_edit_method="Studio" days_early_for_beta="null" due="null" edxnotes="false" graceperiod="null" graded="false" group_access="{}" in_entrance_exam="false" max_attempts="null" relative_weeks_due="null" rerandomize="never" self_paced="false" show_correctness="always" show_reset_button="false" showanswer="finished" start="&quot;2030-01-01T00:00:00Z&quot;" static_asset_path="" use_latex_compiler="false" user_partitions="[]" video_auto_advance="false" video_bumper="{}" video_speed_optimizations="true" visible_to_staff_only="false" hide_from_toc="false" org="TestX" library="ProblemBank">
+  <ns0:name xmlns:ns0="http://code.edx.org/xblock/option" none="true"/>
+  <ns1:giturl xmlns:ns1="http://code.edx.org/xblock/option" none="true"/>
+  <ns2:matlab_api_key xmlns:ns2="http://code.edx.org/xblock/option" none="true"/>
+  <ns3:xqa_key xmlns:ns3="http://code.edx.org/xblock/option" none="true"/>
+  <ns4:chrome xmlns:ns4="http://code.edx.org/xblock/option" none="true"/>
+  <ns5:default_tab xmlns:ns5="http://code.edx.org/xblock/option" none="true"/>
+  <ns6:format xmlns:ns6="http://code.edx.org/xblock/option" none="true"/>
+  <ns7:source_file xmlns:ns7="http://code.edx.org/xblock/option" none="true"/>
+  <ns8:advanced_modules xmlns:ns8="http://code.edx.org/xblock/option">[]</ns8:advanced_modules>
+  <problem url_name="b69263f64ccc42059acb08fce8ef38ac"/>
+  <problem url_name="4117ac465f0a4c3787d1e49a682d6b1f"/>
+  <problem url_name="5214137ab58f45fd910a81522dc30f3a"/>
+  <problem url_name="4f570296f05c434d803929f37cc69f51"/>
+  <problem url_name="649f3f9de12a4170bf28ae0acb5aa148"/>
+  <problem url_name="0299e599bd3742599b721fbf0296537c"/>
+  <problem url_name="f601422a18b54d5ea87146fe877bb7dc"/>
+  <problem url_name="651467dc4e0c4912849265d7b42a0700"/>
+  <problem url_name="835c5557a9bb437cbd694b0ebef8ac63"/>
+  <problem url_name="694e904e2af24fdcbbc551f82d82965d"/>
+  <problem url_name="f2b5ea92f0464969a7c85affa617a202"/>
+  <problem url_name="b094e316eeb6430eb19528d44db0cb11"/>
+</library>

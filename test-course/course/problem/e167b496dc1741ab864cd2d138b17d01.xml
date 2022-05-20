@@ -1,0 +1,10 @@
+<problem display_name="Question accompanying video" markdown="&gt;&gt;Which video were you shown? &lt;&lt;&#10;&#10;(x) anant&#10;( ) crab rave&#10;( ) free shavacdo&#10;">
+<multiplechoiceresponse>
+  <label>Which video were you shown? </label>
+<choicegroup type="MultipleChoice">
+    <choice correct="true">anant</choice>
+    <choice correct="false">crab rave</choice>
+    <choice correct="false">free shavacdo</choice>
+  </choicegroup>
+</multiplechoiceresponse>
+</problem>

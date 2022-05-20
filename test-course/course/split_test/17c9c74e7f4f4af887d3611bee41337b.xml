@@ -1,0 +1,5 @@
+<split_test group_id_to_child="{&quot;1510747468&quot;: &quot;i4x://TestX/Course/vertical/9ddfbdb864b64d65a78b6b55a4e42490&quot;, &quot;1299116708&quot;: &quot;i4x://TestX/Course/vertical/ca4b73c26a0b467fbdc08352b694f0d5&quot;, &quot;1203097969&quot;: &quot;i4x://TestX/Course/vertical/37c4cdabe1224273a41f3977d84a8981&quot;}" user_partition_id="1617092182" display_name="Content Experiment - Question that relates to video">
+  <vertical url_name="9ddfbdb864b64d65a78b6b55a4e42490"/>
+  <vertical url_name="ca4b73c26a0b467fbdc08352b694f0d5"/>
+  <vertical url_name="37c4cdabe1224273a41f3977d84a8981"/>
+</split_test>
