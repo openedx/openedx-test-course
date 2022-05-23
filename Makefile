@@ -7,7 +7,7 @@ COURSE_TAR=$(COURSE).tar.gz
 PROBLEM_BANK=test-problem-bank
 PROBLEM_BANK_TAR=$(PROBLEM_BANK).tar.gz
 
-TUTOR ?= tutor
+TUTOR:=tutor
 MOUNT_REPO=--mount='cms,cms-worker:.:/openedx/data/$(REPO_NAME)'
 
 help: ## display this help message
