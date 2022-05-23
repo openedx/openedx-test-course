@@ -38,6 +38,17 @@ Currently, the test course contains at least one usage of all advanced block typ
 Some of the block usages aren't yet configured in a useful way;
 for example, the LTI Consumer block usage exists, but it isn't set up to consume an LTI tool yet.
 
+Desired test content
+====================
+
+Looking to contribute? Here a few areas where we could use more content:
+
+* Actual tool launches for various configurations of ``lti`` and ``lti_consumer`` blocks.
+* Use of content groups for units and sequences. Currently, content groups are only tested at the component (sub-unit) level.
+* Use of custom Python in Advanced LONCAPA problems.
+* Examples usages of start/end dates, beta-released content, etc.
+* Handouts, static tabs, and other advanced uses of the Course Home.
+
 Usage
 *****
 
