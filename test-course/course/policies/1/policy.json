@@ -97,6 +97,32 @@
                 "parameters": {},
                 "scheme": "random",
                 "version": 3
+            },
+            {
+                "active": true,
+                "description": "The groups in this configuration can be mapped to cohorts in the Instructor Dashboard.",
+                "groups": [
+                    {
+                        "id": 597655586,
+                        "name": "Test Content Group X",
+                        "version": 1
+                    },
+                    {
+                        "id": 1255884249,
+                        "name": "Test Content Group Z",
+                        "version": 1
+                    },
+                    {
+                        "id": 794766095,
+                        "name": "Test Content Group Y",
+                        "version": 1
+                    }
+                ],
+                "id": 2084052488,
+                "name": "Content Groups",
+                "parameters": {},
+                "scheme": "cohort",
+                "version": 3
             }
         ],
         "xml_attributes": {

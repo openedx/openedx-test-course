@@ -1,10 +1,10 @@
 <problem display_name="Question accompanying video" markdown="&gt;&gt;Which video were you shown? &lt;&lt;&#10;&#10;( ) anant&#10;( ) crab rave&#10;(x) free shavacdo&#10;">
-<multiplechoiceresponse>
-  <label>Which video were you shown? </label>
-<choicegroup type="MultipleChoice">
-    <choice correct="false">anant</choice>
-    <choice correct="false">crab rave</choice>
-    <choice correct="true">free shavacdo</choice>
-  </choicegroup>
-</multiplechoiceresponse>
+  <multiplechoiceresponse>
+    <label>Which video were you shown? </label>
+    <choicegroup type="MultipleChoice">
+      <choice correct="false">anant</choice>
+      <choice correct="false">crab rave</choice>
+      <choice correct="true">free shavacdo</choice>
+    </choicegroup>
+  </multiplechoiceresponse>
 </problem>
