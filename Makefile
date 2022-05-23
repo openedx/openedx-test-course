@@ -8,6 +8,8 @@ PROBLEM_BANK=test-problem-bank
 PROBLEM_BANK_TAR=$(PROBLEM_BANK).tar.gz
 
 TUTOR:=tutor
+TUTOR_CONTEXT:=local
+LIBRARY_IMPORT_USER:=admin
 MOUNT_REPO=--mount='cms,cms-worker:.:/openedx/data/$(REPO_NAME)'
 
 help: ## display this help message
@@ -27,9 +29,9 @@ untar: ## unpack all existent tars of test course and libraries
 
 import: tar ## import course and libraries into a locally-running Tutor instance. assumes admin user exists.
 	yes | \
-	$(TUTOR) local run $(MOUNT_REPO) cms \
-		./manage.py cms import_content_library /openedx/data/$(REPO_NAME)/$(PROBLEM_BANK_TAR) admin
-	$(TUTOR) local run $(MOUNT_REPO) cms \
+	$(TUTOR) $(TUTOR_CONTEXT) run $(MOUNT_REPO) cms \
+		./manage.py cms import_content_library /openedx/data/$(REPO_NAME)/$(PROBLEM_BANK_TAR) $(LIBRARY_IMPORT_USER)
+	$(TUTOR) $(TUTOR_CONTEXT) run $(MOUNT_REPO) cms \
 		./manage.py cms import /openedx/data $(REPO_NAME)/$(COURSE)/course
-	$(TUTOR) local run cms \
+	$(TUTOR) $(TUTOR_CONTEXT) run cms \
 		./manage.py cms reindex_course --all --setup

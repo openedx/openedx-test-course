@@ -47,11 +47,15 @@ First, generate the ``tar.gz`` archives for the test course and each test librar
 
   make tar
   
-If you are running Open edX via ``tutor local`` and have a user named ``admin``, then you can import the test course and libraries from the command line. Just activate your Tutor virtuale environment, navigate to this repository, and run::
+If you are running Open edX via ``tutor local`` and have a user named ``admin``, then you can easily import the test course and libraries from the command line. Just activate your Tutor virtual environment, navigate to this repository, and run::
 
   make import
 
-Otherwise, you will need to:
+The ``import`` Makefile recipe takes a few variables that you can tweak. For example, if you are using ``/my/custom/tutor dev`` and have a user named ``library-owner``, then you would write::
+
+  make import TUTOR=/my/custom/tutor TUTOR_CONTEXT=dev LIBRARY_IMPORT_USER=library-owner
+
+Otherwise, if you do not have command-line access to your instance or if it's not Tutor-managed, then you can always import the course manually via Studio:
 
 1. Create a library in Studio with the org ``TestX`` and the slug ``ProblemBank``.
 2. Import ``test-problem-bank.tar.gz`` into the library.
