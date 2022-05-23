@@ -24,8 +24,8 @@ tar: # create/overwrite tars for test course and for each test library
 	cd $(PROBLEM_BANK) && tar czfv ../$(PROBLEM_BANK_TAR) ./library/
 
 untar: ## unpack all existent tars of test course and libraries
-	[ -f $(COURSE_TAR) ] && (cd $(COURSE) && tar xzfv ../$(COURSE_TAR))
-	[ -f $(PROBLEM_BANK_TAR) ] && (cd $(PROBLEM_BANK) && tar xzfv ../$(PROBLEM_BANK_TAR))
+	[ -f $(COURSE_TAR) ] && (cd $(COURSE) && tar xzfv ../$(COURSE_TAR)) || echo "No course to unpack."
+	[ -f $(PROBLEM_BANK_TAR) ] && (cd $(PROBLEM_BANK) && tar xzfv ../$(PROBLEM_BANK_TAR)) || echo "No problem bank to unpack."
 
 import: tar ## import course and libraries into a locally-running Tutor instance. assumes admin user exists.
 	yes | \
