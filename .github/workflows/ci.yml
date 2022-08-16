@@ -15,12 +15,8 @@ jobs:
             - name: checkout
               uses: actions/checkout@v2
 
-            # TOOD: just install latest stable tutor from PyPI once:
-            #   * https://github.com/openedx/edx-platform/pull/30449 is merged and built
-            #     into tutor openedx image, and
-            #   * https://github.com/overhangio/tutor/pull/669 is merged and released.
-            - name: install tutor
-              run: pip install git+https://github.com/kdmccormick/tutor.git@kdmccormick/test-course-nightly#egg=tutor
+            - name: install latest tutor
+              run: pip install tutor
 
             - name: disable mfe
               run: |
