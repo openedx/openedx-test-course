@@ -18,11 +18,6 @@ jobs:
             - name: install latest tutor
               run: pip install tutor
 
-            - name: disable mfe
-              run: |
-                  tutor plugins disable mfe
-                  tutor config save
-
             - name: tutor local quickstart
               run: tutor local quickstart --non-interactive
 
