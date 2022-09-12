@@ -57,14 +57,20 @@ To use this course and its libraries, you will need to import them into an Open 
 First, generate the ``tar.gz`` archives for the test course and each test library::
 
   make tar
+
+Then, if you are running Open edX via Tutor, you can import the test course and libraries with::
+
+  make import TUTOR=... TUTOR_CONTEXT=... LIBRARY_IMPORT_USER=...
   
-If you are running Open edX via ``tutor local`` and have a user named ``admin``, then you can easily import the test course and libraries from the command line. Just activate your Tutor virtual environment, navigate to this repository, and run::
+where:
 
-  make import
+* ``TUTOR`` should be the command that you use to run Tutor (defaults to simply ``tutor``).
+* ``TUTOR_CONTEXT`` should be the mode in which you want to import the course (defaults to ``local``, other acceptable values are ``k8s`` and ``dev``).
+* ``LIBRARY_IMPORT_USER`` is the username of an existing user in your Open edX instance that will be given ownership of the imported library (defaults to ``admin``).
 
-The ``import`` Makefile recipe takes a few variables that you can tweak. For example, if you are using ``/my/custom/tutor dev`` and have a user named ``library-owner``, then you would write::
+For example::
 
-  make import TUTOR=/my/custom/tutor TUTOR_CONTEXT=dev LIBRARY_IMPORT_USER=library-owner
+  make import TUTOR='tutor --root=~/tutor-root' TUTOR_CONTEXT=dev LIBRARY_IMPORT_USER=alice
 
 Otherwise, if you do not have command-line access to your instance or if it's not Tutor-managed, then you can always import the course manually via Studio:
 
