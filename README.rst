@@ -63,7 +63,7 @@ Looking to contribute? Here a few areas where we could use more content:
 Usage
 *****
 
-To use this course and its libraries, you will need to import them into an Open edX instance. As of June 2022, this has been tested with both Maple and Nutmeg.
+To use this course and its libraries, you will need to import them into an Open edX instance. As of June 2022, this has been tested with Maple, Nutmeg, and Olive.
 
 Manual import
 =============
