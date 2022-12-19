@@ -4,7 +4,12 @@ Open edX Test Course (and Test Libraries)
 Contents
 ********
 
-This repository contains the raw Open Learning XML (OLX) of:
+This repository contains downloadable pakages, within the `downloadable-packages` directory, of:
+
+* A course named **"Open edX Test Course"** and the key ``course-v1:TestX+Course+1`` (``downloadable-packages/test-course.tar.gz``)
+* A library named **"Open edX Test Problem Bank"** and the key ``library-v1:TestX+ProblemBank`` (``downloadable-packages/test-problem-bank.tar.gz``)
+
+It also contains the raw Open Learning XML (OLX) of:
 
 * A course named **"Open edX Test Course"** and the key ``course-v1:TestX+Course+1``.
 * A library named **"Open edX Test Problem Bank"** and the key ``library-v1:TestX+ProblemBank``.
