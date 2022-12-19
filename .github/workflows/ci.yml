@@ -18,14 +18,19 @@ jobs:
             - name: install latest tutor
               run: pip install tutor
 
-            - name: tutor local quickstart
-              run: tutor local quickstart --non-interactive
+            - name: disable tutor-mfe
+              run: |
+                  tutor plugins disable mfe
+                  tutor config save
+
+            - name: launch tutor
+              run: tutor local launch --non-interactive
 
             # We need a user to exist, since all libraries need an owner.
             # The Makefile assigns the library to the user named 'admin', so
             # we name create an 'admin' user here.
             - name: create admin user
-              run: tutor local createuser admin admin@example.com --password admin --staff --superuser
+              run: tutor local do createuser admin admin@example.com --password admin --staff --superuser
 
             - name: import course & libraries
               run: make import
