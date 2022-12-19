@@ -1,11 +1,11 @@
-.PHONY: clean help tar untar import
+.PHONY: clean dist help import tar unpack untar
 
 REPO_NAME=openedx-test-course
 
 COURSE=test-course
-COURSE_TAR=$(COURSE).tar.gz
+COURSE_TAR=dist/$(COURSE).tar.gz
 PROBLEM_BANK=test-problem-bank
-PROBLEM_BANK_TAR=$(PROBLEM_BANK).tar.gz
+PROBLEM_BANK_TAR=dist/$(PROBLEM_BANK).tar.gz
 
 TUTOR:=tutor
 TUTOR_CONTEXT:=local
@@ -19,13 +19,19 @@ help: ## display this help message
 clean: ## delete all course and library tarballs
 	rm -f $(COURSE_TAR) $(PROBLEM_BANK_TAR)
 
-tar: # create/overwrite tars for test course and for each test library
+dist: ## create/overwrite tars for test course and for each test library
 	cd $(COURSE) && tar czfv ../$(COURSE_TAR) ./course/
 	cd $(PROBLEM_BANK) && tar czfv ../$(PROBLEM_BANK_TAR) ./library/
 
-untar: ## unpack all existent tars of test course and libraries
+unpack: ## unpack all existent tars of test course and libraries
 	[ -f $(COURSE_TAR) ] && (cd $(COURSE) && tar xzfv ../$(COURSE_TAR)) || echo "No course to unpack."
 	[ -f $(PROBLEM_BANK_TAR) ] && (cd $(PROBLEM_BANK) && tar xzfv ../$(PROBLEM_BANK_TAR)) || echo "No problem bank to unpack."
+
+# Backwards compatibility.
+tar: dist
+
+# Backwards compatibility.
+untar: unpack
 
 import: tar ## import course and libraries into a locally-running Tutor instance. assumes admin user exists.
 	yes | \
